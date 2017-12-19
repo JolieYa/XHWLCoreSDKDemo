@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  XHWLCoreSDK
+//
+//  Created by gongairong on 2017/12/19.
+//  Copyright © 2017年 王赛华. All rights reserved.
+//
+
+MACH_O_TYPE = staticlib
+

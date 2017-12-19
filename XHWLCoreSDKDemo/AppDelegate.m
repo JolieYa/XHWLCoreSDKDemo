@@ -7,17 +7,65 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import <XHWLCoreSDK/XHTalkBackManager.h>
 
-@interface AppDelegate ()
-
+@interface AppDelegate ()<WDGVideoCallDelegate>
+@property (nonatomic, strong) UIAlertController *foregroundAlert;
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] init];
+    self.window.backgroundColor = [UIColor colorWithRed:225/255.0 green:225/255.0 blue:225/255.0 alpha:1.0];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    [[XHTalkBackManager sharedManager] connectWithUserID:@"18307478839" success:^(NSString *idtoken) {
+        if (idtoken != nil) {
+            [XHVideoCall sharedInstance].delegate = self;
+        }
+    }];
+    
+    // 2.设置根控制器
+    ViewController *vc = [[ViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    nav.navigationBar.translucent = YES;
+    
+    UITabBarController * tabBar = [[UITabBarController alloc]init];
+    
+    
+    // 设置tabBar的子视图控制器
+    tabBar.viewControllers = @[nav];
+    
+    //    NSDictionary * fileDict = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"YR_UrlPlist" ofType:@"plist"]] objectForKey:@"loginUrl"];
+    //
+    
+    self.window.rootViewController = tabBar;
+    // 3.显示窗口
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
+}
+#pragma mark - XHDelegate
+- (void)wilddogVideoCall:(WDGVideoCall *)videoCall didReceiveCallWithConversation:(WDGConversation *)conversation data:(NSString *)data {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"%@ 邀请你进行视频通话\n%@", conversation.remoteUid, data] preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *rejectAction = [UIAlertAction actionWithTitle:@"拒绝" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        [conversation reject];
+    }];
+    
+    UIAlertAction *acceptAction = [UIAlertAction actionWithTitle:@"接受" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        [[XHTalkBackManager sharedManager] XHOpenTalkBackWithSuperVC:[UIApplication sharedApplication].keyWindow.rootViewController withConversation:(XHConversation *)conversation];
+        
+    }];
+    
+    [alertController addAction:rejectAction];
+    [alertController addAction:acceptAction];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
+    
+    self.foregroundAlert = alertController;
 }
 
 

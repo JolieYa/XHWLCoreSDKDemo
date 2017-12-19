@@ -1,0 +1,6 @@
+framework module Pods_XHWLCoreSDKDemoTests {
+  umbrella header "Pods-XHWLCoreSDKDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

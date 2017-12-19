@@ -15,6 +15,13 @@
 		195000B01FE904090020236A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 195000AF1FE904090020236A /* main.m */; };
 		195000BA1FE9040A0020236A /* XHWLCoreSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 195000B91FE9040A0020236A /* XHWLCoreSDKDemoTests.m */; };
 		195000C51FE9040B0020236A /* XHWLCoreSDKDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 195000C41FE9040B0020236A /* XHWLCoreSDKDemoUITests.m */; };
+		195000DC1FE9070A0020236A /* XHWLCoreSDKDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 195000DB1FE9070A0020236A /* XHWLCoreSDKDemo.podspec */; };
+		195000E71FE91A380020236A /* XHWLCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195000E61FE91A380020236A /* XHWLCoreSDK.framework */; };
+		195000E81FE91A3E0020236A /* XHWLCoreSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = 195000E61FE91A380020236A /* XHWLCoreSDK.framework */; };
+		195000E91FE91A440020236A /* XHWLCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 195000E61FE91A380020236A /* XHWLCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC36B121982DC8AE4BA03458 /* Pods_XHWLCoreSDKDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FD22BB10EBA6F59B906924 /* Pods_XHWLCoreSDKDemoTests.framework */; };
+		C7C5A3B95070212A90A4B7F4 /* Pods_XHWLCoreSDKDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E18B309FB67420866D452F /* Pods_XHWLCoreSDKDemoUITests.framework */; };
+		EB0BAD25AA4ECA41BD6A63A9 /* Pods_XHWLCoreSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B429FC7ED03547A8F3100C31 /* Pods_XHWLCoreSDKDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		195000D91FE906E40020236A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				195000E91FE91A440020236A /* XHWLCoreSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		07B48238F9FEDD86BB1F40BC /* Pods-XHWLCoreSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemoUITests/Pods-XHWLCoreSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1950009D1FE904090020236A /* XHWLCoreSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHWLCoreSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195000A01FE904090020236A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		195000A11FE904090020236A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +73,16 @@
 		195000C01FE9040A0020236A /* XHWLCoreSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHWLCoreSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		195000C41FE9040B0020236A /* XHWLCoreSDKDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHWLCoreSDKDemoUITests.m; sourceTree = "<group>"; };
 		195000C61FE9040B0020236A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195000DB1FE9070A0020236A /* XHWLCoreSDKDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XHWLCoreSDKDemo.podspec; sourceTree = "<group>"; };
+		195000E61FE91A380020236A /* XHWLCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XHWLCoreSDK.framework; sourceTree = SOURCE_ROOT; };
+		31FB7BB19A42536D10663885 /* Pods-XHWLCoreSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemoTests/Pods-XHWLCoreSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		419DB7E8587B3482B42771FD /* Pods-XHWLCoreSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemoTests/Pods-XHWLCoreSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B36EC56FA4D536CB9757A48 /* Pods-XHWLCoreSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemoUITests/Pods-XHWLCoreSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60BBD848733884C3C00421E8 /* Pods-XHWLCoreSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemo/Pods-XHWLCoreSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		60EB634DAD5F4B1E8123C09E /* Pods-XHWLCoreSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHWLCoreSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHWLCoreSDKDemo/Pods-XHWLCoreSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B429FC7ED03547A8F3100C31 /* Pods_XHWLCoreSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHWLCoreSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FD22BB10EBA6F59B906924 /* Pods_XHWLCoreSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHWLCoreSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4E18B309FB67420866D452F /* Pods_XHWLCoreSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHWLCoreSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0BAD25AA4ECA41BD6A63A9 /* Pods_XHWLCoreSDKDemo.framework in Frameworks */,
+				195000E71FE91A380020236A /* XHWLCoreSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC36B121982DC8AE4BA03458 /* Pods_XHWLCoreSDKDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C5A3B95070212A90A4B7F4 /* Pods_XHWLCoreSDKDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +117,13 @@
 		195000941FE904080020236A = {
 			isa = PBXGroup;
 			children = (
+				195000DB1FE9070A0020236A /* XHWLCoreSDKDemo.podspec */,
 				1950009F1FE904090020236A /* XHWLCoreSDKDemo */,
 				195000B81FE9040A0020236A /* XHWLCoreSDKDemoTests */,
 				195000C31FE9040A0020236A /* XHWLCoreSDKDemoUITests */,
 				1950009E1FE904090020236A /* Products */,
+				AB4AB348DD34B41587187306 /* Pods */,
+				5C4CB577138864C39E1B46EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +140,7 @@
 		1950009F1FE904090020236A /* XHWLCoreSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				195000E61FE91A380020236A /* XHWLCoreSDK.framework */,
 				195000A01FE904090020236A /* AppDelegate.h */,
 				195000A11FE904090020236A /* AppDelegate.m */,
 				195000A31FE904090020236A /* ViewController.h */,
@@ -132,6 +172,29 @@
 			path = XHWLCoreSDKDemoUITests;
 			sourceTree = "<group>";
 		};
+		5C4CB577138864C39E1B46EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B429FC7ED03547A8F3100C31 /* Pods_XHWLCoreSDKDemo.framework */,
+				C2FD22BB10EBA6F59B906924 /* Pods_XHWLCoreSDKDemoTests.framework */,
+				E4E18B309FB67420866D452F /* Pods_XHWLCoreSDKDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB4AB348DD34B41587187306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60EB634DAD5F4B1E8123C09E /* Pods-XHWLCoreSDKDemo.debug.xcconfig */,
+				60BBD848733884C3C00421E8 /* Pods-XHWLCoreSDKDemo.release.xcconfig */,
+				419DB7E8587B3482B42771FD /* Pods-XHWLCoreSDKDemoTests.debug.xcconfig */,
+				31FB7BB19A42536D10663885 /* Pods-XHWLCoreSDKDemoTests.release.xcconfig */,
+				4B36EC56FA4D536CB9757A48 /* Pods-XHWLCoreSDKDemoUITests.debug.xcconfig */,
+				07B48238F9FEDD86BB1F40BC /* Pods-XHWLCoreSDKDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +202,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195000C91FE9040B0020236A /* Build configuration list for PBXNativeTarget "XHWLCoreSDKDemo" */;
 			buildPhases = (
+				D5A82B4135260A103CD76E7A /* [CP] Check Pods Manifest.lock */,
 				195000991FE904090020236A /* Sources */,
 				1950009A1FE904090020236A /* Frameworks */,
 				1950009B1FE904090020236A /* Resources */,
+				064D9BF558E9619873397BEF /* [CP] Embed Pods Frameworks */,
+				C32671A69F4F9DFFE4AC94DC /* [CP] Copy Pods Resources */,
+				195000D91FE906E40020236A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195000CC1FE9040B0020236A /* Build configuration list for PBXNativeTarget "XHWLCoreSDKDemoTests" */;
 			buildPhases = (
+				649186DB52530EE793DD68F3 /* [CP] Check Pods Manifest.lock */,
 				195000B11FE9040A0020236A /* Sources */,
 				195000B21FE9040A0020236A /* Frameworks */,
 				195000B31FE9040A0020236A /* Resources */,
+				17606FCF217BB5876EC2BBB0 /* [CP] Embed Pods Frameworks */,
+				B77732F4B5E8193DEC880503 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195000CF1FE9040B0020236A /* Build configuration list for PBXNativeTarget "XHWLCoreSDKDemoUITests" */;
 			buildPhases = (
+				EF46A915DA4064650F819BB8 /* [CP] Check Pods Manifest.lock */,
 				195000BC1FE9040A0020236A /* Sources */,
 				195000BD1FE9040A0020236A /* Frameworks */,
 				195000BE1FE9040A0020236A /* Resources */,
+				4424F5294EEC293CF0F47C0C /* [CP] Embed Pods Frameworks */,
+				51316509EF07B84FE90AD68D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +311,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195000E81FE91A3E0020236A /* XHWLCoreSDK.framework in Resources */,
 				195000AD1FE904090020236A /* LaunchScreen.storyboard in Resources */,
 				195000AA1FE904090020236A /* Assets.xcassets in Resources */,
 				195000A81FE904090020236A /* Main.storyboard in Resources */,
+				195000DC1FE9070A0020236A /* XHWLCoreSDKDemo.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +334,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		064D9BF558E9619873397BEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemo/Pods-XHWLCoreSDKDemo-frameworks.sh",
+				"${PODS_ROOT}/WilddogWebRTC/WebRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemo/Pods-XHWLCoreSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17606FCF217BB5876EC2BBB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemoTests/Pods-XHWLCoreSDKDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4424F5294EEC293CF0F47C0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemoUITests/Pods-XHWLCoreSDKDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51316509EF07B84FE90AD68D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemoUITests/Pods-XHWLCoreSDKDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		649186DB52530EE793DD68F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XHWLCoreSDKDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77732F4B5E8193DEC880503 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemoTests/Pods-XHWLCoreSDKDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C32671A69F4F9DFFE4AC94DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHWLCoreSDKDemo/Pods-XHWLCoreSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5A82B4135260A103CD76E7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XHWLCoreSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF46A915DA4064650F819BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XHWLCoreSDKDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		195000991FE904090020236A /* Sources */ = {
@@ -428,11 +653,20 @@
 		};
 		195000CA1FE9040B0020236A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EB634DAD5F4B1E8123C09E /* Pods-XHWLCoreSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4285ALH3W;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+					"$(PROJECT_DIR)/XHWLCoreSDKDemo/Lib",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = XHWLCoreSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhwl.XHWLCoreSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +676,20 @@
 		};
 		195000CB1FE9040B0020236A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BBD848733884C3C00421E8 /* Pods-XHWLCoreSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4285ALH3W;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Lib",
+					"$(PROJECT_DIR)/XHWLCoreSDKDemo/Lib",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = XHWLCoreSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhwl.XHWLCoreSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +699,7 @@
 		};
 		195000CD1FE9040B0020236A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 419DB7E8587B3482B42771FD /* Pods-XHWLCoreSDKDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +715,7 @@
 		};
 		195000CE1FE9040B0020236A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FB7BB19A42536D10663885 /* Pods-XHWLCoreSDKDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +731,7 @@
 		};
 		195000D01FE9040B0020236A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B36EC56FA4D536CB9757A48 /* Pods-XHWLCoreSDKDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4285ALH3W;
@@ -500,6 +746,7 @@
 		};
 		195000D11FE9040B0020236A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B48238F9FEDD86BB1F40BC /* Pods-XHWLCoreSDKDemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4285ALH3W;
